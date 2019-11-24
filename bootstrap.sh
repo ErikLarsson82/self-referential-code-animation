@@ -2,7 +2,8 @@
 while true
 do
   printf "Running self-referential code animation - endless mode\n\n"
-  node foo.js
+  node foo.js 'bootstrap.sh'
+  node foo.js 'foo.js'
   printf "Reloading bash script in 10 seconds..."
   sleep 2
   printf "..."
